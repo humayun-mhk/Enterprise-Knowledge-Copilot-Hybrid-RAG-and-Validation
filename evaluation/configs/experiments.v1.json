@@ -1,0 +1,71 @@
+{
+  "version": "retrieval-config-v1",
+  "description": "Controlled ablations for Enterprise Knowledge Copilot. Backend adapters must apply these settings rather than infer behavior from display names.",
+  "shared": {
+    "candidate_k": 20,
+    "final_k": 10,
+    "chunking_profile": "enterprise-default-v1",
+    "prompt_version": "grounded-answer-v1",
+    "temperature": 0.0
+  },
+  "experiments": [
+    {
+      "id": "A",
+      "display_name": "Dense RAG",
+      "pipeline": {
+        "dense_enabled": true,
+        "bm25_enabled": false,
+        "fusion": "none",
+        "reranker_enabled": false,
+        "citations_enabled": false,
+        "validator_enabled": false
+      }
+    },
+    {
+      "id": "B",
+      "display_name": "Hybrid RAG",
+      "pipeline": {
+        "dense_enabled": true,
+        "bm25_enabled": true,
+        "fusion": "weighted_score",
+        "dense_weight": 0.6,
+        "bm25_weight": 0.4,
+        "reranker_enabled": false,
+        "citations_enabled": false,
+        "validator_enabled": false
+      }
+    },
+    {
+      "id": "C",
+      "display_name": "Hybrid + Reranker",
+      "pipeline": {
+        "dense_enabled": true,
+        "bm25_enabled": true,
+        "fusion": "reciprocal_rank_fusion",
+        "rrf_k": 60,
+        "reranker_enabled": true,
+        "reranker_profile": "cross-encoder-v1",
+        "citations_enabled": false,
+        "validator_enabled": false
+      }
+    },
+    {
+      "id": "D",
+      "display_name": "Hybrid + Validator",
+      "pipeline": {
+        "dense_enabled": true,
+        "bm25_enabled": true,
+        "fusion": "reciprocal_rank_fusion",
+        "rrf_k": 60,
+        "reranker_enabled": true,
+        "reranker_profile": "cross-encoder-v1",
+        "citations_enabled": true,
+        "citation_profile": "page-passage-v1",
+        "validator_enabled": true,
+        "validator_profile": "claim-verifier-v1",
+        "maximum_revision_rounds": 1
+      }
+    }
+  ]
+}
+

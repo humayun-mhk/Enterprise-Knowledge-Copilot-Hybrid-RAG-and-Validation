@@ -1,0 +1,15 @@
+{
+  "version": "evaluation-local-v1",
+  "mode": "evaluate",
+  "dataset": "data/benchmark/enterprise_qa_v1.jsonl",
+  "experiments_config": "evaluation/configs/experiments.v1.json",
+  "output_dir": "evaluation/results",
+  "temp_dir": "evaluation/.runtime_tmp",
+  "experiments": ["A", "B", "C", "D"],
+  "adapter": {
+    "kind": "python",
+    "target": "backend.app.evaluation_adapter:BackendEvaluationAdapter"
+  },
+  "max_error_rate": 0.0,
+  "mlflow": false
+}

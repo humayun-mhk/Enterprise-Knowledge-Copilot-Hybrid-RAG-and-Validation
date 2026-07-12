@@ -1,0 +1,190 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 589 >>
+stream
+BT
+/F1 10 Tf
+72 742 Td
+14 TL
+(Information Security Standard 2026) Tj
+T*
+(Version 2026.2 | Owner: Information Security) Tj
+T*
+(Page 1 of 4 | Section: Authentication) Tj
+T*
+(SYNTHETIC TRAINING DOCUMENT - NOT AN ACTUAL COMPANY POLICY) Tj
+T*
+() Tj
+T*
+(Authentication) Tj
+T*
+() Tj
+T*
+(Policy statement 1: Enterprise passwords must contain at least 14 characters.) Tj
+T*
+() Tj
+T*
+(Policy statement 2: Multi-factor authentication is mandatory for remote access and every) Tj
+T*
+(privileged account.) Tj
+T*
+() Tj
+T*
+(Questions about this section should be directed to the document owner.) Tj
+T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 659 >>
+stream
+BT
+/F1 10 Tf
+72 742 Td
+14 TL
+(Information Security Standard 2026) Tj
+T*
+(Version 2026.2 | Owner: Information Security) Tj
+T*
+(Page 2 of 4 | Section: Data classification and encryption) Tj
+T*
+(SYNTHETIC TRAINING DOCUMENT - NOT AN ACTUAL COMPANY POLICY) Tj
+T*
+() Tj
+T*
+(Data classification and encryption) Tj
+T*
+() Tj
+T*
+(Policy statement 1: Restricted data must use AES-256 encryption at rest and TLS 1.2 or) Tj
+T*
+(later in transit.) Tj
+T*
+() Tj
+T*
+(Policy statement 2: The Communications team must approve information before it is) Tj
+T*
+(classified as Public.) Tj
+T*
+() Tj
+T*
+(Questions about this section should be directed to the document owner.) Tj
+T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 708 >>
+stream
+BT
+/F1 10 Tf
+72 742 Td
+14 TL
+(Information Security Standard 2026) Tj
+T*
+(Version 2026.2 | Owner: Information Security) Tj
+T*
+(Page 3 of 4 | Section: Incident reporting) Tj
+T*
+(SYNTHETIC TRAINING DOCUMENT - NOT AN ACTUAL COMPANY POLICY) Tj
+T*
+() Tj
+T*
+(Incident reporting) Tj
+T*
+() Tj
+T*
+(Policy statement 1: A suspected information-security incident must be reported to the) Tj
+T*
+(Security Operations Center within 30 minutes of detection.) Tj
+T*
+() Tj
+T*
+(Policy statement 2: A suspected phishing message must be forwarded as an attachment to) Tj
+T*
+(security@example.test without clicking links or replying.) Tj
+T*
+() Tj
+T*
+(Questions about this section should be directed to the document owner.) Tj
+T*
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 648 >>
+stream
+BT
+/F1 10 Tf
+72 742 Td
+14 TL
+(Information Security Standard 2026) Tj
+T*
+(Version 2026.2 | Owner: Information Security) Tj
+T*
+(Page 4 of 4 | Section: Access lifecycle) Tj
+T*
+(SYNTHETIC TRAINING DOCUMENT - NOT AN ACTUAL COMPANY POLICY) Tj
+T*
+() Tj
+T*
+(Access lifecycle) Tj
+T*
+() Tj
+T*
+(Policy statement 1: System owners must review privileged access rights every quarter.) Tj
+T*
+() Tj
+T*
+(Policy statement 2: Access must be disabled within 4 hours for an involuntary separation) Tj
+T*
+(and by the end of the last working day for a voluntary separation.) Tj
+T*
+() Tj
+T*
+(Questions about this section should be directed to the document owner.) Tj
+T*
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000139 00000 n 
+0000000266 00000 n 
+0000000906 00000 n 
+0000001033 00000 n 
+0000001743 00000 n 
+0000001870 00000 n 
+0000002629 00000 n 
+0000002757 00000 n 
+0000003457 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+3528
+%%EOF

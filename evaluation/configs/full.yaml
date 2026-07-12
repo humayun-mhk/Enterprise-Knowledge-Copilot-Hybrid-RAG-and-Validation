@@ -1,0 +1,16 @@
+{
+  "version": "evaluation-full-v1",
+  "mode": "evaluate",
+  "dataset": "data/benchmark/enterprise_qa_v1.jsonl",
+  "experiments_config": "evaluation/configs/experiments.v1.json",
+  "output_dir": "evaluation/results",
+  "experiments": ["A", "B", "C", "D"],
+  "adapter": {
+    "kind": "http",
+    "base_url_env": "EVALUATION_BASE_URL",
+    "base_url": "http://127.0.0.1:8000"
+  },
+  "max_error_rate": 0.0,
+  "mlflow": false
+}
+

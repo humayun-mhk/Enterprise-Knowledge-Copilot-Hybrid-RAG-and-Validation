@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.Python
+.pytest_cache/
+pytest-cache-files-*/
+.pytest_tmp/
+.test_runtime/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# JavaScript
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Runtime data
+.env
+storage/
+uploads/
+mlruns/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Generated evaluation artifacts (the checked-in sample report is retained)
+evaluation/results/*.json
+evaluation/results/*.csv
+evaluation/results/*.html
+!evaluation/results/.gitkeep
+!evaluation/results/README.md
+
+# Editors / operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,71 @@
+name: enterprise-knowledge-copilot
+
+services:
+  api:
+    build:
+      context: ./backend
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      CHROMA_PERSIST_DIR: /app/storage/chroma
+      METADATA_DB_URL: sqlite:////app/storage/copilot.db
+      UPLOAD_DIR: /app/storage/uploads
+      EVALUATION_RESULTS_DIR: /app/evaluation-results
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+    volumes:
+      - copilot-storage:/app/storage
+      - ./data/source_documents:/app/sample_documents:ro
+      - ./evaluation/results:/app/evaluation-results:ro
+    ports:
+      - "8000:8000"
+    depends_on:
+      mlflow:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: /api
+    ports:
+      - "3000:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.14.3
+    command:
+      - mlflow
+      - server
+      - --host
+      - 0.0.0.0
+      - --port
+      - "5000"
+      - --backend-store-uri
+      - sqlite:////mlflow/mlflow.db
+      - --default-artifact-root
+      - /mlflow/artifacts
+    volumes:
+      - mlflow-data:/mlflow
+    ports:
+      - "5000:5000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  copilot-storage:
+  mlflow-data:

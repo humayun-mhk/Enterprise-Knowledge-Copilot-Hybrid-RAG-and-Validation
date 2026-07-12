@@ -1,0 +1,14 @@
+{
+  "version": "evaluation-ci-v1",
+  "requires_api_keys": false,
+  "downloads_models": false,
+  "commands": [
+    "python scripts/generate_enterprise_assets.py",
+    "python scripts/validate_evaluation_assets.py",
+    "python -m pytest evaluation/tests -q"
+  ],
+  "deployment_gate": {
+    "command_template": "python scripts/run_evaluation.py --adapter replay --replay <captured-predictions.jsonl> --max-error-rate 0",
+    "note": "Quality thresholds should be set only after a reviewed baseline has been measured and committed; this file does not invent targets."
+  }
+}

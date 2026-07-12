@@ -1,0 +1,8 @@
+{
+  "version": "evaluation-ci-v1",
+  "mode": "validate_assets",
+  "minimum_questions": 240,
+  "requires_api_keys": false,
+  "downloads_models": false
+}
+

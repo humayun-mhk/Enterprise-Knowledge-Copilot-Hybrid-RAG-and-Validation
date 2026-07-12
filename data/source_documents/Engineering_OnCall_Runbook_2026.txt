@@ -1,0 +1,51 @@
+Engineering On-Call Runbook 2026
+Version 2026.5 | Owner: Site Reliability Engineering
+Page 1 of 4 | Section: Acknowledgement targets
+SYNTHETIC TRAINING DOCUMENT - NOT AN ACTUAL COMPANY POLICY
+
+Acknowledgement targets
+
+Policy statement 1: The primary on-call engineer must acknowledge a Severity 1 page within 5 minutes.
+
+Policy statement 2: The primary on-call engineer must acknowledge a Severity 2 page within 15 minutes.
+
+Questions about this section should be directed to the document owner.
+
+Engineering On-Call Runbook 2026
+Version 2026.5 | Owner: Site Reliability Engineering
+Page 2 of 4 | Section: Escalation
+SYNTHETIC TRAINING DOCUMENT - NOT AN ACTUAL COMPANY POLICY
+
+Escalation
+
+Policy statement 1: An Incident Commander must be assigned if a Severity 1 incident remains unresolved 10 minutes after acknowledgement.
+
+Policy statement 2: The first executive update for a Severity 1 incident is due within 30 minutes of incident declaration.
+
+Questions about this section should be directed to the document owner.
+
+Engineering On-Call Runbook 2026
+Version 2026.5 | Owner: Site Reliability Engineering
+Page 3 of 4 | Section: Incident communications
+SYNTHETIC TRAINING DOCUMENT - NOT AN ACTUAL COMPANY POLICY
+
+Incident communications
+
+Policy statement 1: Customer-facing status updates must be posted at least every 30 minutes during an active Severity 1 incident.
+
+Policy statement 2: A Severity 1 postmortem must be completed within 5 business days after service restoration.
+
+Questions about this section should be directed to the document owner.
+
+Engineering On-Call Runbook 2026
+Version 2026.5 | Owner: Site Reliability Engineering
+Page 4 of 4 | Section: Rotation and handoff
+SYNTHETIC TRAINING DOCUMENT - NOT AN ACTUAL COMPANY POLICY
+
+Rotation and handoff
+
+Policy statement 1: The daily on-call handoff occurs at 9:00 a.m. in the receiving engineer's local time zone.
+
+Policy statement 2: An engineer may not serve as primary on-call for more than 7 consecutive calendar days.
+
+Questions about this section should be directed to the document owner.
