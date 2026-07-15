@@ -871,16 +871,4 @@ Current limitations to address before real internal deployment:
 
 The code is structured so these concerns can be added without rewriting the RAG pipeline.
 
-## Resume-Ready Bullets
-
-- Built an enterprise hybrid RAG copilot with FastAPI, React, LangChain, LangGraph, Chroma-compatible vector retrieval, BM25, reranking, citation generation, and answer validation.
-- Implemented document ingestion for PDF, DOCX, TXT, and HTML with metadata extraction, chunking, duplicate detection, embeddings, vector indexing, and BM25 indexing.
-- Designed a LangGraph validation agent that verifies factual claims and citations, revises unsupported answers, and refuses insufficient-evidence queries with structured JSON output.
-- Created a generated enterprise policy corpus with 12 documents, 48 page-level passages, and a 248-question benchmark covering exact policy, paraphrase, multi-document, ambiguous, adversarial, and unanswerable questions.
-- Built an evaluation framework comparing Dense RAG, Hybrid RAG, Hybrid + Reranker, and Hybrid + Validator using Recall@K, Precision@K, MRR, nDCG, correctness, faithfulness, citation precision/recall, hallucination rate, refusal accuracy, latency, and cost fields.
-- Produced measured offline evaluation results showing Recall@5 improved from 0.7355 to 0.9139 after hybrid retrieval plus reranking, and citation precision reached 0.9531 with the validator enabled.
-- Added MLOps workflows with Docker Compose, MLflow hooks, versioned retrieval configs, immutable evaluation reports, GitHub Actions CI, pytest, mypy, Ruff, Vitest, and frontend build checks.
-
-## Honest Project Takeaway
-
-The strongest measured gain is retrieval quality: dense-only Recall@5 of 0.7355 improved to 0.9139 with hybrid retrieval, reciprocal-rank fusion, and reranking. The validator added citation precision of 0.9531 and structured evidence checks, but it increased latency and slightly reduced deterministic correctness in the offline baseline because it revised or refused more conservatively. That is the point of the project: the evaluation pipeline makes the tradeoff visible instead of hiding it behind a polished demo.
+on of 0.9531 and structured evidence checks, but it increased latency and slightly reduced deterministic correctness in the offline baseline because it revised or refused more conservatively. That is the point of the project: the evaluation pipeline makes the tradeoff visible instead of hiding it behind a polished demo.
