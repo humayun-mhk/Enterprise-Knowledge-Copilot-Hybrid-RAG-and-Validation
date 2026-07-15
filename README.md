@@ -231,7 +231,7 @@ Important: these are offline baseline results. They are not presented as OpenAI,
 | Hybrid + Reranker | 0.5974 | 0.4081 | 1.0000 | 0.8750 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
 | Hybrid + Validator | 0.5735 | 0.4022 | 1.0000 | 0.8710 | 0.8020 | 0.9531 | 0.8271 | 0.0887 | 0.0000 |
 
-#### Latency and Cost Metrics
+#### Cost Metrics
 
 | System | Base Retrieval ms | Reranking ms | Retrieval Total ms | Generation ms | Validation ms | Total Avg ms | p50 Total ms | p95 Total ms | Estimated Cost USD |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
