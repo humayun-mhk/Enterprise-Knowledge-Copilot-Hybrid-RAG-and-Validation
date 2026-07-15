@@ -872,3 +872,4 @@ Current limitations to address before real internal deployment:
 The code is structured so these concerns can be added without rewriting the RAG pipeline.
 
 on of 0.9531 and structured evidence checks, but it increased latency and slightly reduced deterministic correctness in the offline baseline because it revised or refused more conservatively. That is the point of the project: the evaluation pipeline makes the tradeoff visible instead of hiding it behind a polished demo.
+_
